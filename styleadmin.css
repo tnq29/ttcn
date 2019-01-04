@@ -1,0 +1,21 @@
+#imglogo2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.82;	
+}
+
+ body {
+  background-color: #ffe3b5;  
+  background-repeat: no-repeat;  
+  background-attachment: scroll;  
+  background-position: 2px 9px; 
+  background-size: cover;
+
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 30px; font-weight: bold; 
+  line-height: 23px; letter-spacing: 22px; 
+  text-align: center; text-shadow: #08244f 5px 5px; 
+  display: block; opacity: 0.9;
+}

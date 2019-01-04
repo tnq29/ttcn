@@ -1,0 +1,11 @@
+body {
+  background-color: white;  
+  background-repeat: no-repeat;  
+  background-attachment: scroll;  
+  background-position: 17% 17%;
+  background-size: cover;
+   font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 13px; font-weight: bold; 
+  line-height: 13px; letter-spacing: 1px; 
+  text-align: center; text-shadow: #08244f 0.02px 0.02px; 
+}

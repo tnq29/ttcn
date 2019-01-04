@@ -1,0 +1,30 @@
+<!Doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styleb.css">
+	<script language = "javascript">
+	function xuli(){
+		var ten = document.getElementById("theloai").value; 
+		if(ten == "") alert("Vui lòng nhập tên món ăn");
+		else document.getElementById("formSearch").submit();
+	}
+	</script>
+</head>
+<body>
+<hr>
+<form method = "POST" action = "xulytimkiem_theloai.php" id = "formSearch">
+<table>
+<br><h2>CHỌN THỂ LOẠI</h2>
+<tr>
+	<select class="txt2" id  = "theloai" name = "t4">
+                    <option value = 'anvat'>Ăn vặt</option>
+                    <option value = 'buachinh'>Bữa chính</option>
+                    <option value = 'douong'>Đồ uống</option>
+                    </select><br><br>
+</tr>
+<tr><input class="btn" type = "button" onClick = "xuli()" value = "Tìm kiếm" id = "id_Search"/></tr>	
+</table>
+<br><br><hr>	
+</body>
+</html>

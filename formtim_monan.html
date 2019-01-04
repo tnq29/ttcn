@@ -1,0 +1,24 @@
+<!Doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styleb.css">
+	<script language = "javascript">
+	function xuli(){
+		var ten = document.getElementById("id_TenMA").value; 
+		if(ten == "") alert("Vui lòng nhập tên món ăn");
+		else document.getElementById("formSearch").submit();
+	}
+	</script>
+</head>
+<body>
+<hr>
+<form method = "POST" action = "xulytimkiem_monan.php" id = "formSearch"><br><br>
+<table>
+<h2>NHẬP TÊN MÓN ĂN</h2>
+<tr><input class="txt2" type = "text" name = "tenMA" id = "id_TenMA"/><br></tr><br>
+<tr><input class="btn" type = "button" onClick = "xuli()" value = "Tìm kiếm" id = "id_Search"/></tr>	
+</table>
+<br><br><br><hr>
+</body>
+</html>

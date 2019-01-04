@@ -1,0 +1,72 @@
+body {
+  background-color: white;  
+  background-repeat: no-repeat;  
+  background-attachment: scroll;  
+  background-position: 17% 17%;
+  background-size: cover;
+   font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 14px; 
+  line-height: 13px; letter-spacing: 0.4px; 
+  text-align: center; text-shadow: #08244f 0.02px 0.02px; 
+}
+
+#frame {
+  border-style: hidden;
+}
+
+#bodyleftadmin {
+  background-color: #aaadda;
+}
+
+#loginbody {
+    background-color: white;  
+  background-repeat: no-repeat;
+  background-attachment: scroll;  
+  background-position: 0% 0% ;
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 13px; font-weight: bold; 
+  line-height: 13px; letter-spacing: 3px; 
+  text-align: center; text-shadow: #08244f 1.1px 1.1px; 
+  display: block;
+  opacity: 0.7;
+}
+
+#imglogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+
+}
+
+#created2 {
+     color: #aaaacc; 
+     font-family: 'Helvetica Neue', sans-serif; 
+     font-size: 20px; font-weight: bold; 
+     line-height: 12px; letter-spacing: 3px; 
+     text-align: center; text-shadow: #77a4dd 1.3px 1.3px; 
+     text-transform: uppercase;
+     display: block;
+     opacity: 0.4
+}   
+
+#tablebody {
+    color: #ffffff; 
+     font-family: 'Helvetica Neue', sans-serif; 
+     font-size: 15px; font-style: bold;
+     line-height: 15px; letter-spacing: 1.2px; 
+     text-align: center; text-shadow: #000000 0.1px 0.1px; 
+     display: block;
+}
+
+#table {
+    border-color: #ffffff33;
+}    

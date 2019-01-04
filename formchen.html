@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Chèn</title>
+    <link rel="stylesheet" type="text/css" href="styleb.css">
+    <meta charset="utf-8">
+    <script  language="JavaScript" >
+        function test(){
+           id     = document.formThem.t0.value;
+           ten     = document.formThem.t1.value;
+           diachi  = document.formThem.t2.value;
+           mota    = document.formThem.t3.value;
+           theloai = document.formThem.t4.value;
+           link    = document.formThem.t5.value;
+           anh     = document.formThem.t6.value;
+           khuvuc  = document.formThem.t7.value;
+
+          if(id == "" ||ten == "" || diachi == "" || mota == "" || theloai == "" || link == "" || anh == "" || khuvuc == "")
+              alert("Vui lòng nhập đầy đủ thông tin!");
+          else  document.formThem.submit(); 
+        }
+    </script>
+</head>
+<body background="./src/bg10.jpg">
+  <center>
+    <br><br>
+    <form  action = "xulychen.php" method = "POST" id="IdFormThemNV" name = "formThem" >     
+        <h2>THÊM MỘT ĐỊA ĐIỂM ĂN UỐNG</h2><br>
+        <table width="750px" height="400px" id="tableadd" border="2">
+            <tr>    
+                <td>Mã món ăn</td>
+                <td><input class="txt" style="" type="text" id = "id" name = "t0" /></td>
+            </tr>
+            <tr>    
+                <td>Tên món ăn</td>
+                <td><input class="txt" style="" type="text" id = "ten" name = "t1" /></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input class="txt" type="text" id  = "diachi" name = "t2" /></td>
+            </tr>
+            <tr>
+                <td>Mô tả</td>
+                <td>
+                    <textarea class="txt" name="t3" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Thể loại </td>
+                <td>
+                    <select class="txt3"  id= "theloai" name = "t4" >
+                    <option value="0"></option>
+                    <option value = 'anvat'>Ăn vặt</option>
+                    <option value = 'buachinh'>Bữa chính</option>
+                    <option value = 'douong'>Đồ uống</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Link Web</td>
+                <td><input class="txt" type="text" id= "link" name="t5"></td>
+            </tr>
+            <tr>
+                <td>Link Ảnh</td>
+                <td><input class="txt" type="file" accept="png" id  = "anh" name = "t6"></td>
+            </tr>
+            <tr>
+                <td> Khu vực </td>
+                <td>
+                    <select class="txt3" id="khuvuc" name="t7">
+                        <option value="0"></option>
+                        <option value="hue">Huế</option>
+                        <option value="danang">Đà Nẵng</option>
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="hcm">Hồ Chí Minh</option>
+                    </select>
+                </td>
+            </tr><br>
+        </table>
+        <br><br>
+        <input class="btn" type = "button" name = "ok" value = "OK" onclick = "test()"/>
+        <input class="btn" type = "reset" name = "reset" value = "Reset">
+    </form>
+    <br>
+  </center> 
+</body>
+</html>
